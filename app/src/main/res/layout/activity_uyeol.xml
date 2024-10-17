@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent" android:padding="16dp">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeni üyelik sayfası"
+            android:textSize="20sp"
+            android:textColor="@color/purple"
+            android:fontFamily="sans-serif-black"
+            android:id="@+id/tvuyeliksayfasi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"/>
+    <Button
+            android:background="@drawable/buttonarkaplan"
+            android:text="Kaydet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/kaydetbutton"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/etkayitolparola"/>
+    <EditText
+            android:padding="15dp"
+            android:background="@drawable/edittextarkaplan"
+            android:layout_width="0dp"
+            android:layout_height="59dp"
+            android:inputType="text"
+            android:textColor="@color/purple"
+            android:hint="Email Adresinizi Giriniz"
+            android:ems="10"
+            android:id="@+id/etkayitolemail"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/tvuyeliksayfasi"/>
+    <EditText
+            android:padding="15dp"
+            android:background="@drawable/edittextarkaplan"
+            android:layout_width="0dp"
+            android:layout_height="59dp"
+            android:inputType="text"
+            android:textColor="@color/purple"
+            android:hint="Parolanızı Giriniz"
+            android:ems="10"
+            android:id="@+id/etkayitolparola"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/etkayitolemail"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

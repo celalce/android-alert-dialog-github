@@ -6,40 +6,40 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity" android:padding="16dp">
     <TextView
-            android:layout_width="127dp"
-            android:layout_height="41dp"
+            android:layout_width="86dp"
+            android:layout_height="29dp"
             android:text="Üye Ol"
             android:id="@+id/tvuyeol"
-            tools:layout_editor_absoluteY="385dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:textSize="20sp" android:textColor="@color/purple"
             android:fontFamily="sans-serif-black" app:layout_constraintHorizontal_bias="0.5"
-    />
+            android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/girisyapbutton"/>
     <TextView
             android:layout_width="127dp"
             android:layout_height="41dp"
             android:text="Giriş Sayfası"
-            tools:layout_editor_absoluteY="72dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" android:textSize="20sp" android:textColor="@color/purple"
             android:fontFamily="sans-serif-black"
             android:id="@+id/tvgirisyap"
-            app:layout_constraintHorizontal_bias="0.5"/>
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="72dp"/>
     <Button
             android:background="@drawable/buttonarkaplan"
             android:text="Giriş Yap"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/girisyapbutton"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintVertical_bias="0.499"
-            android:textSize="20sp"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/girisyapbutton"
+            android:textSize="20sp" android:layout_marginTop="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/etparola" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"/>
     <EditText
             android:padding="15dp"
             android:background="@drawable/edittextarkaplan"
-            android:layout_width="207dp"
+            android:layout_width="0dp"
             android:layout_height="59dp"
             android:inputType="text"
             android:textColor="@color/purple"
@@ -47,19 +47,21 @@
             android:ems="10"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/etemail"
-            tools:layout_editor_absoluteY="146dp" android:textSize="20sp"
-            app:layout_constraintHorizontal_bias="0.5"/>
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.5" android:layout_marginTop="33dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvgirisyap"/>
     <EditText
             android:padding="15dp"
             android:background="@drawable/edittextarkaplan"
-            android:layout_width="207dp"
+            android:layout_width="0dp"
             android:layout_height="59dp"
             android:inputType="text"
             android:textColor="@color/purple"
-            android:hint="Email Adresinizi Giriniz"
+            android:hint="Parolanızı Giriniz"
             android:ems="10"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/etparola"
-            tools:layout_editor_absoluteY="221dp" android:textSize="20sp"
-            app:layout_constraintHorizontal_bias="0.5"/>
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.5" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/etemail"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
