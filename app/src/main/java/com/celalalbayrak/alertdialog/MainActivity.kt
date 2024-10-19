@@ -24,8 +24,8 @@ class MainActivity : AppCompatActivity() {
         }
         //baslarken email ve parolımızı tutmak için iki değişken oluşturalmı
 
-        val girisemal = ""
-        val girisparola= ""
+        var girisemal = ""
+        var girisparola= ""
 
         binding.tvuyeol.setOnClickListener {
             var activity_uyeol = LayoutInflater.from(this).inflate(R.layout.activity_uyeol, null)
